@@ -351,7 +351,7 @@
     <p class="footer-form-p">Subscribe</p>
     <form class="footer-form">
       <label class="footer-label">
-        <input class="footer-input" name="Subscribe"  type="email" placeholder="E-mail"/>
+        <input class="footer-input" name="subscribe"  type="email" placeholder="E-mail"/>
       </label>
       <button class="footer-btn" type="submit">Subscribe
         <svg class="footer-svg" width="24" height="24">
@@ -406,7 +406,24 @@
       </div>
       </div>
       <div class="privacy-container">
-        <input class="form-checkbox visually-hidden" 
+        <label class="form-label" for="user-comment">
+          <span>Comment</span>
+        </label>
+        <textarea class="textrea" id="user-comment" name="user-comment" placeholder="Text input">
+        </textarea>
+      <div class="modal-check">
+        <input class="form-checkbox visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy"/>
+        <label class="form-label-privacy" for="user-privacy">
+          <span class="label-span">
+            <svg class="form-icon-checkbox" width="10" height="8">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+          </span>
+        I accept the terms and conditions of
+        </label>
+        <button class="form-btn" type="submit">Send</button>
+      </div>
+        <!--<input class="form-checkbox visually-hidden" 
         type="checkbox"
         name="user-privacy"
         id="user-privacy"
@@ -421,7 +438,7 @@
           <a class="modal-a" href="#"> Privacy Policy</a>
         </label>
       </div>
-      <button type="submit">Send</button>
+      <button type="submit">Send</button>-->
     </form>
   </div>
 </div>
