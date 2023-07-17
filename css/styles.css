@@ -14,7 +14,8 @@ a {
     --link-color-add:#434455;
     --color-footer:#F4F4FD;
     --color-border:#E7E9FC;
-    --color-customers:#8e8f99; 
+    --color-customers:#8e8f99;
+    --color-cheked: #404bbf;  
   }
   h1,h2,h3,h4,h5,h6,p {
     margin-top: 0;
@@ -694,7 +695,7 @@ input {
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.form-icon:focus {
+.form-input:focus .form-icon {
     fill: #4D5AE5; 
 }
 .textrea {
@@ -714,6 +715,11 @@ input {
 }
 .textrea:focus {
     border-color: #4D5AE5; 
+}
+.form-checkbox[type="checkbox"]:checked .form-icon-checkbox {
+    background-color: var(--color-cheked);
+    border: none; 
+    fill: var(--color-footer);
 }
 .modal-check {
     display: flex;
