@@ -649,17 +649,15 @@ input {
     margin-bottom: 8px;
 }
 .modal-p {
-    padding-top: 72px;
-    width: 360px;
-    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--link-color);
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
-    letter-spacing: 0.32px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
     margin-bottom: 16px; 
 }
 .modal-form-container {
@@ -718,6 +716,8 @@ input {
     border-color: #4D5AE5; 
 }
 .modal-check {
+    display: flex;
+    width: 360px;
     margin-bottom: 24px; 
 }
 .form-label-privacy {
@@ -737,6 +737,13 @@ input {
     justify-content: center; 
     fill: transparent;
 }
+.policy-link {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--letter-spacing);
+    text-decoration: underline;
+}
 .form-btn {
     display: block;
     min-width: 169px;
@@ -755,8 +762,14 @@ input {
 }
 .privacy-container {
     display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:rgba(142, 143, 153, 1);
+    background-color: transparent;
     align-items: center;
-    margin-bottom: 16px 
+    margin-bottom: 16px; 
 }
 .form-label-privacy {
     align-items: center;
@@ -764,4 +777,5 @@ input {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    margin-bottom: 4px;
 }
