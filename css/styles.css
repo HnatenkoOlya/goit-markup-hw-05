@@ -72,7 +72,6 @@ a {
 .header {
     border-bottom: 1px solid var(--color-border);
     box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
-    width: 1440px;
     height: 72px;
     top: 24px;
 }
@@ -100,8 +99,8 @@ a {
 }
 .container {
     width: 1158px;
-    margin: 0 auto;
     padding: 0 15px;
+    margin: 0 auto;
     flex-wrap: wrap;
   }
 .header-container {
@@ -162,6 +161,11 @@ a {
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover;
+    justify-content: center;
+    background-color: var(--primary-dark-color);
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
 } 
 .hero-h {
     font-size: 56px;
@@ -170,6 +174,9 @@ a {
     letter-spacing: 0.02em;
     color: #ffffff;
     max-width: 496px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 48px;
 }
 .btn {
     background-color: #4D5AE5;
@@ -185,8 +192,8 @@ a {
     height: 56px;
     border: none;
     border-radius: 4px;
-    margin: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 }
 .btn:hover,
 .btn:focus {
@@ -325,6 +332,8 @@ a {
     line-height: 1.11;
     color: var(--link-color);
     margin-bottom: 72px; 
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 .customers-ul {
     display: flex;
@@ -384,7 +393,14 @@ a {
     display: flex; 
     gap: 16px;
     justify-content: center;
-    margin-right: 80px;
+    margin-bottom: 16px;
+}
+.footer-soc_list {
+    margin-right: 120px;
+    line-height: 1.5;
+    color: var( --color-footer);
+    letter-spacing: 0.02em;
+    max-width: 264px;
 }
 .footer-soc-li {
     width: 40px;
@@ -407,6 +423,9 @@ a {
 .svg-soc {
     fill: var(--color-footer);
 }
+.footer-form-d {
+    margin-left: 80px;
+}
 .footer-form-p {
     margin-bottom: 16px;
     font-weight: 500; 
@@ -419,6 +438,7 @@ a {
     display: flex; 
     gap: 24px;
 }
+
 .footer-input {
     width: 264px; 
     height: 40px;
@@ -664,6 +684,10 @@ input {
 .modal-form-container {
     margin-bottom: 8px; 
 }
+.btn-modal:hover .modal_icon,
+.btn-modal:focus .modal_icon {
+    fill: #4D5AE5; 
+}
 .form-label {
     font-size: 12px;
     line-height: 1.17;
@@ -716,7 +740,7 @@ input {
 .textrea:focus {
     border-color: #4D5AE5; 
 }
-.form-checkbox:checked + .form-label-privacy .form-icon-checkbox  {
+.form-checkbox:checked + .form-label-privacy .label-span  {
     border: none; 
     background-color: var(--color-cheked);
     fill: var(--color-footer);
